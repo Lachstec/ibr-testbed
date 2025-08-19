@@ -1,0 +1,500 @@
+{
+  "name": "ibr",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-dc02bd495057",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINMEuQJpe21MfcfJIXCEvgOzWsV82iuze+6PnF25RaIr","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFzqvI1sBFxj3GlgE1o418l/IhpMB+oNApU9R4lJsidu","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFlsgbfu/N9trzMz0E3j/c5bmJGzZ/ljKjg2upSs1Itc"],
+  "nodes": {
+    "h1-1": {
+      "index": "0",
+      "shortname": "h1-1",
+      "longname": "clab-ibr-h1-1",
+      "fqdn": "h1-1.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h1-1",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h1-1",
+        "clab-node-longname": "clab-ibr-h1-1",
+        "clab-node-name": "h1-1",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "605",
+        "graph-posY": "545"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "h2-1": {
+      "index": "1",
+      "shortname": "h2-1",
+      "longname": "clab-ibr-h2-1",
+      "fqdn": "h2-1.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h2-1",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h2-1",
+        "clab-node-longname": "clab-ibr-h2-1",
+        "clab-node-name": "h2-1",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "715",
+        "graph-posY": "665"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "h3-1": {
+      "index": "2",
+      "shortname": "h3-1",
+      "longname": "clab-ibr-h3-1",
+      "fqdn": "h3-1.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h3-1",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/h3-1",
+        "clab-node-longname": "clab-ibr-h3-1",
+        "clab-node-name": "h3-1",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "835",
+        "graph-posY": "545"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "r1": {
+      "index": "3",
+      "shortname": "r1",
+      "longname": "clab-ibr-r1",
+      "fqdn": "r1.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r1",
+      "kind": "linux",
+      "image": "flex/frr-gnmi-target:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r1",
+        "clab-node-longname": "clab-ibr-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "685",
+        "graph-posY": "545"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "4",
+      "shortname": "r2",
+      "longname": "clab-ibr-r2",
+      "fqdn": "r2.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r2",
+      "kind": "linux",
+      "image": "flex/frr-gnmi-target:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r2",
+        "clab-node-longname": "clab-ibr-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "715",
+        "graph-posY": "585"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "5",
+      "shortname": "r3",
+      "longname": "clab-ibr-r3",
+      "fqdn": "r3.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r3",
+      "kind": "linux",
+      "image": "flex/frr-gnmi-target:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r3",
+        "clab-node-longname": "clab-ibr-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "755",
+        "graph-posY": "545"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "6",
+      "shortname": "r4",
+      "longname": "clab-ibr-r4",
+      "fqdn": "r4.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r4",
+      "kind": "linux",
+      "image": "flex/frr-gnmi-target:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r4",
+        "clab-node-longname": "clab-ibr-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "685",
+        "graph-posY": "475"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r5": {
+      "index": "7",
+      "shortname": "r5",
+      "longname": "clab-ibr-r5",
+      "fqdn": "r5.ibr.io",
+      "group": "",
+      "labdir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r5",
+      "kind": "linux",
+      "image": "flex/frr-gnmi-target:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-dc02bd495057",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/leonlux/Developer/ibr-testbed/clab-ibr/r5",
+        "clab-node-longname": "clab-ibr-r5",
+        "clab-node-name": "r5",
+        "clab-node-type": "",
+        "clab-owner": "leonlux",
+        "clab-topo-file": "/home/leonlux/Developer/ibr-testbed/ibr.clab.yml",
+        "containerlab": "ibr",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-posX": "755",
+        "graph-posY": "475"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "r1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:93:dd:5b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:78:71:e2",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:f5:41:a7",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:c3:4c:ba",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:25:f4:2e",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:83:4c:1d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:39:34:73",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r4",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:50:29:46",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:bc:28:4a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:6b:03:16",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r4",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:bb:e6:63",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r5",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:88:11:ce",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r4",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:ea:e0:bc",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r5",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:5f:76:d9",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r5",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:84:dd:9f",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r3",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:fa:b0:47",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "r5",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:5c:cb:03",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r3",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:50:92:7e",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "h1-1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:16:1b:ee",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:28:b9:86",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "h2-1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:fa:15:93",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:d9:37:23",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "h3-1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:6b:e0:81",
+        "peer": "z"
+      },
+      "z": {
+        "node": "r3",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:ae:c6:cb",
+        "peer": "a"
+      }
+    }
+  ]
+}
