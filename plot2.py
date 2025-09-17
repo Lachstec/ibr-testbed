@@ -52,10 +52,10 @@ time_axis = np.arange(max_len) * interval_len
 fig, axes = plt.subplots(1, 3, figsize=(12, 3))  # try (12,3) for ~40% shorter
 
 # common font sizes (smaller because figure is shorter)
-label_fontsize = 10
-tick_fontsize = 8
-title_fontsize = 12
-legend_fontsize = 9
+label_fontsize = 14
+tick_fontsize = 10 
+title_fontsize = 16
+legend_fontsize = 12
 
 # Left subplot
 l1, = axes[0].plot(time_axis, real_mean / 1000, label="real / 1000", color="blue")
@@ -97,10 +97,11 @@ fig.legend(
     frameon=True
 )
 
+fig.align_ylabels(axes)
 # smaller top title, placed to avoid overlapping with axes in the reduced height
 fig.suptitle("Throughput over Time", fontsize=title_fontsize)
 # adjust spacing: bring subplots up a bit and leave space for the legend
-plt.subplots_adjust(left=0.12, right=0.98, top=0.88, bottom=0.20, wspace=0.35)
+plt.subplots_adjust(left=0.12, right=0.98, top=0.88, bottom=0.25, wspace=0.35)
 
 fig.savefig("throughput_overlay_shorter.png", dpi=300, bbox_inches='tight')
 fig.savefig("throughput_overlay_shorter.pdf", bbox_inches='tight')
